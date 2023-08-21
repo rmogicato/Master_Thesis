@@ -8,6 +8,8 @@ e.g.:
 
 `DATASET_PATH="/local/scratch/datasets/ImageNet/ILSVRC2012"`
 
+Python 3.10 and PyTorch 1.11 were used for development.
+
 ### Structure
 The directory `hierarchical_classification` contains all relevant files implemented in this thesis.
 Generally, I would recommend reading the thesis provided for the background information that is done here.
@@ -37,3 +39,6 @@ Instead, the three scripts should serve as template on how one can use the provi
 * `evaluate_open_set.py` shows how the open-set performance using methods from `open_class_methods.py`
 * `visualize_plots.py` is a simple visualization file which uses methods from `visualization_helper.py`
 
+### Python issues
+If you use Python 3.10 and PyTorch 1.11, you may encounter an error message related to the `collections` package.
+This is a Python 3.10 issue with a relatively easy fix found [here](https://discuss.pytorch.org/t/issues-on-using-nn-dataparallel-with-python-3-10-and-pytorch-1-11/146745/16).
